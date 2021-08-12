@@ -1,0 +1,33 @@
+/*
+Uff, ¡vimos un montón de cosas!  Aprendimos sobre la sintaxis de las funciones en JavaScript, los tipos de datos y sus operaciones, e incluso conocimos uno nuevo: los strings.
+
+¡Pero no tan rápido! 
+
+Antes de terminar un último desafío: ¿Cuál es el valor de las siguientes expresiones? ¡Marcá todas las correctas!
+
+
+4 + 4 vale 8
+
+
+"4" + "4" vale "44"
+
+
+4 + 4 vale "44"
+
+
+"on" + "ce" vale "once"
+
+
+true && false vale false
+
+
+true && false vale 0
+
+
+5 >= 6 vale false
+
+
+! true vale false
+
+
+*/

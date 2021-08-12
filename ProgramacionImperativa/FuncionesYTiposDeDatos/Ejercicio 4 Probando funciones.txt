@@ -1,0 +1,20 @@
+/*
+Quizás ya lo notaste pero, junto al editor, ahora aparece una solapa nueva: la consola.
+
+La consola es una herramienta muy útil para hacer pruebas rápidas sobre lo que estás haciendo: te permite, por ejemplo, probar expresiones, funciones que vengan con JavaScript, o incluso funciones que vos definas en el editor.
+
+La podés reconocer fácilmente porque arranca con el chirimbolito , que se llama prompt.
+
+Veamos si se entiende, probá en la consola las siguientes expresiones:
+
+4 + 5
+Math.round(4.5)
+funcionMisteriosa(1, 2, 3) (ya la declaramos por vos y la podés usar)
+*/
+
+ 4+5
+=> 9
+  Math.round(4.5)
+=> 5
+ funcionMisteriosa(1, 2, 3)
+=> 9

@@ -1,0 +1,18 @@
+/*
+Necesitamos una función signo, que dado un número nos devuelva:
+
+1 si el número es positivo
+0 si el número es cero
+-1 si el número es negativo
+Escribí la función signo. Quizás necesites más de un if.
+*/
+
+function signo(num){
+  if(num > 0){
+     return 1;
+     }else if (num === 0) {
+       return 0;
+     }else{
+       return -1;
+     }
+}
