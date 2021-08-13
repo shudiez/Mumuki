@@ -1,0 +1,23 @@
+/*
+Queremos saber el valor de las cartas de truco cuando jugamos al envido. Sabemos que:
+
+todas las cartas del 1 al 7, inclusive, valen su numeración
+las cartas del 10 al 12, inclusive, valen 0
+no se juega con 8s ni con 9s
+Escribí una función valorEnvido, que tome un número de carta y devuelva su valor de envido.
+
+ valorEnvido(12)
+0
+ valorEnvido(3)
+3
+*/
+
+function valorEnvido(num){
+  if(num >=1 && num <= 7){
+  return  num;
+}if(num >=10 && num<=12){
+  return 0;
+}else(num !== 8 && num!==9)
+  
+  
+}
