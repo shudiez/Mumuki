@@ -1,0 +1,31 @@
+/*
+Ahora bien, más allá de que podamos consultar el resultado de una función a través de la consola, también aprendimos anteriormente que los programas tienen un punto de entrada: el program. ¿Dónde quedó?
+
+La respuesta es tan simple como sorprendente: en JavaScript todo lo que escribamos fuera de una function será, implícitamente, dicho punto de entrada. Por ejemplo, si queremos un programa que imprime por pantalla el clásico "Hola, mundo!", lo podremos escribir así:
+
+imprimir("Hola, mundo!");
+O si queremos un programa que tire tres veces los dados e imprima sus resultados, podemos escribirlo así:
+
+imprimir("Tirando dados");
+imprimir("La primera tirada dio " + tirarDado());
+imprimir("La segunda tirada dio " + tirarDado());
+imprimir("La tercera tirada dio " + tirarDado());
+Copiá y enviá este programa
+*/
+
+imprimir("Tirando dados");
+imprimir("La primera tirada dio " + tirarDado());
+imprimir("La segunda tirada dio " + tirarDado());
+imprimir("La tercera tirada dio " + tirarDado());
+
+/*
+¿Ooooups, y el resultado? ¿Dónde está lo que imprimimos por pantalla? ¿Es que nuestro programa no anduvo?
+
+No, para nada, es que simplemente no te estamos mostrando lo que sale por pantalla .
+
+¿Por qué? ¿Porque somos malvados? Bueno, quizás en parte , pero tenemos además una buena razón: cuando escribís programas reales, es muy, muy frecuente que no sea fácil ver lo que el imprimir imprime, por decenas de motivos. Entonces, como rara vez vas poder ver a tiempo lo que se imprime en la pantalla, terminan siendo una técnica poco útil.
+
+Moraleja: en los ejercicios que quedan, no uses imprimir salvo que te lo pidamos explícitamente.
+
+¡Nos vemos en el próximo ejercicio!
+*/

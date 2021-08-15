@@ -1,0 +1,20 @@
+/*
+Por suerte existe una herramienta que va a simplificar nuestra tarea de ahora en adelante: las variables. 
+
+Las variables nos permiten nombrar y reutilizar valores. Similar a cómo los procedimientos y funciones nos permiten dar nombres y reutilizar soluciones a problemas más pequeños. Por ejemplo, si hacemos...
+
+let primerMes = "enero"
+...estamos asignándole el valor "enero" a la variable primerMes. En criollo, estamos dándole ese valor a la variable. 
+
+Cambiá los lugares donde aparece 3.14159265358979 por la variable pi en las funciones que tenemos definidas.
+*/
+
+let pi = 3.14159265358979;
+
+function perimetroCirculo(radio){
+  return 2 * pi * radio;
+} 
+
+function areaCirculo(radio){
+  return pi * radio* radio;
+}

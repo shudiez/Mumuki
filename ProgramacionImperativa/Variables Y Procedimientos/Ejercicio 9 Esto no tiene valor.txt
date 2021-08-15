@@ -1,0 +1,18 @@
+/*
+Ya que vas entendiendo cómo se asignan las variables, te traemos algo para pensar: ¿qué pasa si intento usar una variable a la que nunca le asigné un valor? 
+
+Tenemos esta función definida:
+
+function sumaSinSentido() {
+  return numero + 8;
+}
+Probala en la consola y fijate qué sucede.
+*/
+
+  sumaSinSentido() 
+return numero + 8;
+^
+
+ReferenceError: numero is not defined
+
+

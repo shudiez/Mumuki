@@ -1,0 +1,40 @@
+/*
+Entonces, ¿es necesario darle valor a nuestras variables antes de usarlas?
+
+¡Sí!  Cuando declarás una variable tenés que darle un valor inicial, lo cual se conoce como inicializar la variable.
+
+¡Y sorpresa! Podemos declarar variables tanto directamente en el programa, como dentro de una function:
+
+function cuentaLoca(unNumero) {
+  let elDoble = unNumero * 2;
+  if (elDoble > 10) {
+    return elDoble;
+  } else {
+    return 0;
+  }
+}
+Las variables declaradas dentro de una function, conocidas como variables locales, no presentan mayor misterio. Sin embargo, hay que tener un particular cuidado: sólo se pueden utilizar desde dentro de la function en cuestión. Si quiero referenciarla desde un programa:
+
+let elCuadruple = elDoble * 4;
+Kaboom, ¡se romperá! 
+
+Sin embargo, las variables declaradas directamente en el programa, conocidas como variables globales, pueden ser utilizadas desde cualquier function. Por ejemplo:
+
+let pesoMaximoEquipajeEnGramos = 5000;
+
+function puedeLlevar(pesoEquipaje) {
+  return pesoEquipaje <= pesoMaximoEquipajeEnGramos;
+}
+Veamos si queda claro: escribí una función ascensorSobrecargado, que toma una cantidad de personas y dice si entre todas superan la carga máxima de 300 kg.
+
+Tené en cuenta que nuestra función va a utilizar dos variables globales:
+
+pesoPromedioPersonaEnKilogramos, la cual ya está declarada,
+cargaMaximaEnKilogramos que vas a tener que declarar.
+*/
+
+let cargaMaximaEnKilogramos = 300;
+function ascensorSobrecargado(cantPersonas){
+  let promedio = cantPersonas * pesoPromedioPersonaEnKilogramos;
+  return promedio > cargaMaximaEnKilogramos;  
+}
