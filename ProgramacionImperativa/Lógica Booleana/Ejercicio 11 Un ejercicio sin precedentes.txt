@@ -1,0 +1,26 @@
+/*
+Si prestaste atención a la función anterior, habrás notado que la operación con mayor precedencia es la negación !, seguida de la conjunción && y por último la disyunción ||. ¿Pero qué pasa si quiero alterar el orden en que se resuelven? 
+
+Al igual que en matemática, podemos usar paréntesis para agrupar las operaciones que queremos que se realicen primero.
+
+Escribí la función puedeJubilarse que recibe la edad y el sexo de una persona, además de los años de aportes jubilatorios que posee:
+
+ puedeJubilarse(62, 'F', 34)
+true
+El mínimo de edad para realizar el trámite para las mujeres es de 60 años, mientras que para los hombres es 65. En ambos casos, se deben contar con al menos 30 años de aportes.
+
+¡Intentá resolverlo en una única función! Después vamos a ver cómo quedaría si delegamos. 
+*/
+
+function puedeJubilarse(edad, sexo, aportes){
+  return sexo === "F" && edad >= 60 && aportes >=30 || sexo ==="M" && edad >= 65 && aportes >= 30;
+}
+
+/*
+¿Y si delegamos? Podríamos separar la lógica de la siguiente manera:
+
+function puedeJubilarse(edad, sexo, aniosAportes) {
+  return cumpleEdadMinima(edad, sexo) && tieneSuficientesAportes(aniosAportes);
+}
+Al delegar correctamente, hay veces en las que no es necesario alterar el orden de precedencia, ¡otro punto a favor de la delegación!
+*/

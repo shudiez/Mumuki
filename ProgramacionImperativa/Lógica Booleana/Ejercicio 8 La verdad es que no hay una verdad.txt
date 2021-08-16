@@ -1,0 +1,26 @@
+/*
+Ahora pensemos cómo sería la tabla de verdad que representa el comportamiento de la función que acabás de hacer.
+
+Las proposiciones serán tienenLaMismaMadre y tienenElMismoPadre, y los valores de verdad que porten dependerán de qué dos personas estén evaluando.
+
+El booleano final resultará de operarlas mediante sonMediosHermanos:
+
+tienen la misma madre	tienen el mismo padre	son medios hermanos
+true	true	false
+true	false	true
+false	true	true
+false	false	false
+Probá tu función sonMediosHermanos con los siguientes valores y comprobá si se comporta como la tabla:
+
+ sonMediosHermanos(arcadio, aurelianoJose)
+ sonMediosHermanos(aurelianoSegundo, remedios)
+ sonMediosHermanos(aurelianoJose, remedios)
+*/
+
+ sonMediosHermanos(arcadio, aurelianoJose)
+=> true
+  sonMediosHermanos(aurelianoSegundo, remedios)
+=> false
+  sonMediosHermanos(aurelianoJose, remedios)
+=> false
+   

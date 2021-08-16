@@ -1,0 +1,22 @@
+/*
+Nuestra amiga Dory  necesitaba hacer algunos trámites en el banco, pero cuando llegó notó que estaba cerrado. 
+
+Para evitar que le ocurra nuevamente, vamos a desarrollar una función que ayude a la gente despistada como ella.
+
+Sabemos que el banco está cerrado cuando:
+
+Es feriado, o
+Es fin de semana, o
+No estamos dentro del horario bancario.
+La función dentroDeHorarioBancario ya la definimos por vos: recibe un horario  (una hora en punto que puede ir desde las 0 hasta las 23) y nos dice si está comprendido en la franja de atención del banco.
+
+Definí las funciones esFinDeSemana y estaCerrado.
+*/
+
+function esFinDeSemana(dia){
+  return dia === "sábado" || dia === "domingo";
+}
+
+function estaCerrado(esFeriado, dia, horario) {
+ return esFeriado || esFinDeSemana(dia) ||  !dentroDeHorarioBancario(horario);
+}
