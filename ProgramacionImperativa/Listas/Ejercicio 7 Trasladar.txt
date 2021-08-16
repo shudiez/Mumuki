@@ -1,0 +1,25 @@
+/*
+Bueno, ya hablamos bastante; ¡es hora de la acción !
+
+Declará un procedimiento trasladar, que tome dos listas, saque el último elemento de la primera y lo agregue a la segunda.
+
+Ejemplo:
+
+let unaLista = [1, 2, 3];
+let otraLista = [4, 5];
+
+trasladar(unaLista, otraLista);
+
+unaLista //debería ser [1, 2]
+otraLista //debería ser [4, 5, 3]
+ ¡Dame una pista!
+¿Tenés dudas sobre cómo quitar y agregar elementos? Repasemos las siguientes funciones:
+
+agregar(lista, elemento): agrega elemento al final de lista.
+remover(lista): saca el último elemento de lista y lo devuelve.
+*/
+
+function trasladar(lista1, lista2){
+  
+  agregar(lista2, remover(lista1));
+}
