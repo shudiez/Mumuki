@@ -1,0 +1,16 @@
+/*
+A veces no sólo queremos comer algo rico, sino que queremos comerlo lo antes posible.  
+
+Desarrollá el procedimiento agregarAPostresRapidos, que recibe una lista con postres rápidos y un postre por parámetro. Si el tiempo de cocción es de una hora o menos, se agrega el registro a la lista.
+
+ ¡Dame una pista!
+¡Recordá que tiempoDeCoccion está expresado en minutos! Por lo tanto, si queremos que sea cocine en una hora o menos, tenés que fijarte que ese tiempoDeCoccion sea menor a 60 minutos. 
+
+Además, como agregarAPostresRapidos es un procedimiento, no t iene que devolver nada. Sólo tenés que agregar (¿te acordás de este procedimiento?) el postre a la lista si es rápido.
+*/
+
+function agregarAPostresRapidos(lista,postre){
+  if (postre.tiempoDeCoccion <= 60){
+  agregar(lista, postre);
+}
+}
