@@ -1,0 +1,20 @@
+/*
+¡Ana tiene nuevos requirimientos! Ahora nos pidió lo siguiente: "Quiero saber cuántos balances fueron positivos, es decir, aquellos en los que la ganancia fue mayor a cero".
+
+Completá la función cantidadDeBalancesPositivos. Si prestás atención, notarás que tiene una estructura similar al problema anterior. 
+
+ ¡Dame una pista!
+Lo importante en este ejercicio es pensar cuál es el valor inicial de cantidad y cuándo incrementa ese valor.
+*/
+
+function cantidadDeBalancesPositivos(balancesDeUnPeriodo) {
+  let cantidad = 0;
+  for (let balance of balancesDeUnPeriodo) {
+   cantidad=cantidad+(balance.ganancia>0)
+  }
+  return cantidad;
+}
+
+/*
+cantidad es lo que en programación se conoce como contador, una variable que se incrementa cada vez que hacemos algo dentro de un for...of o solo aquellas veces que se cumpla una condición (como en este caso ).
+*/

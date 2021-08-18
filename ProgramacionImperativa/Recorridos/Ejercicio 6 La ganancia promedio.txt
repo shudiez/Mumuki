@@ -1,0 +1,26 @@
+/*
+Pasemos al siguiente requerimiento de Ana. Ya podemos calcular una sumatoria de ganancias y también crear contadores, ahora vamos a calcular promedios. 
+
+Ana quisiera saber dado un conjunto cualquiera de balances cuál es su gananciaPromedio.
+
+ gananciaPromedio([
+      { mes: "marzo", ganancia: 8 }, 
+      { mes: "agosto", ganancia: 10 }
+  ])
+9
+ ¡Dame una pista!
+¿Qué es un promedio?  Veámoslo con un ejemplo:
+
+En un grupo de 3 personas, Felipe de 3, Delfina de 8 y Eli de 10 años, la edad promedio es de 7 años. Porque 3 + 8 + 10 es igual a 21, dividido la cantidad de gente en el grupo (3 personas) da 7.
+
+Para esto contás con las funciones gananciaTotal y longitud. 
+*/
+
+function gananciaPromedio(balancesDeUnPeriodo){
+  let sumatoria=0;
+  for(let balance of balancesDeUnPeriodo){
+   sumatoria=gananciaTotal(balancesDeUnPeriodo);
+  }
+  sumatoria=sumatoria/longitud(balancesDeUnPeriodo)
+  return sumatoria;
+}
