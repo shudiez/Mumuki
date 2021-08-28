@@ -1,0 +1,34 @@
+/*
+Ahora te toca a vos: un Ornitologo investiga el comportamiento de las golondrinas y como parte de su estudio las hace:
+
+comer_alpiste! 10
+volar_en_circulos! dos veces
+finalmente comer_alpiste! 10.
+Queremos que Ornitologo entienda un mensaje estudiar_golondrina! que:
+
+tome como parámetro una golondrina;
+le haga hacer su rutina;
+lance una excepción si enviarle volar_en_circulos! al parámetro la lanza.
+Escribí el código necesario y pensá si es necesario hacer algo especial para que la excepción que lanza la golondrina recibida se lance también en estudiar_golondrina!.
+*/
+
+class Ornitologo
+  
+  def estudiar_golondrina!(golondrina)
+   golondrina.comer_alpiste! 10
+   2.times{golondrina.volar_en_circulos!}
+    golondrina.comer_alpiste! 10
+  end
+end
+
+
+/*
+Moraleja: si
+
+Una instancia de ClaseA le envía un mensaje mensaje1 a una instancia de ClaseB.
+Dentro del método de mensaje1, la instancia de ClaseB le envía un mensaje mensaje2 a una instancia de ClaseC.
+mensaje2 lanza una excepción.
+Se aborta el método m2 y propaga la excepción, es decir, la excepción continúa a través de la cadena de envío de mensajes que nos llevó hasta ahí.
+Se aborta también el método m1.
+Esto significa que las excepciones se propagan automáticamente a quien hayan enviado el mensaje que la provocó. ¡No hay que hacer nada para que eso suceda! 
+*/

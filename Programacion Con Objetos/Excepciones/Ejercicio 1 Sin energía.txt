@@ -1,0 +1,35 @@
+/*
+Recordemos a nuestra vieja amiga pepita y su método volar_en_circulos!. Ahora evolucionó y es un objeto de la clase Golondrina:
+
+class Golondrina
+  def initialize
+    @energia = 50
+  end
+
+  def energia
+    @energia
+  end
+
+  def volar_en_circulos!
+    @energia -= 20
+  end
+end
+
+pepita = Golondrina.new
+
+¿Qué le pasará cuando vuele demasiado?
+
+En la consola probá lo siguiente:
+
+Qué pasa con su energía a medida que la hacemos volar en circulos. ¿Hasta qué punto disminuye?
+¿Puede seguir volando cuando ya no tenga energía?
+*/
+
+pepita.volar_en_circulos!
+=> 30
+  pepita.volar_en_circulos!
+=> 10
+  pepita.volar_en_circulos!
+=> -10
+  pepita.volar_en_circulos!
+=> -30

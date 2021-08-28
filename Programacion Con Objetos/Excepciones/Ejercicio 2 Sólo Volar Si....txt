@@ -1,0 +1,37 @@
+/*
+No es muy sorprendente: si pepita vuela muchas veces, se va a quedar sin energía. Y eventualmente no sólo se volverá negativa, sino que continuará consumiendo energía al volar.
+
+pepita.volar_en_circulos! # su energía queda en 30
+pepita.volar_en_circulos! # su energía queda en 10
+pepita.volar_en_circulos! # su energía queda en -10
+pepita.volar_en_circulos! # su energía queda en -20
+# etc...
+Si bien es fácil de entender, esto está claramente mal: la energía de pepita debería ser siempre positiva. Y no debería hacer actividades que le consuman más energía de la que tiene. ¿Qué podríamos hacer?
+
+Modificá el método volar_en_circulos! para que sólo vuele (pierda energía) si puede.
+
+ ¡Dame una pista!
+Una Golondrina puede volar cuando su energía es suficiente, es decir, @energia >= 20.
+
+Recordá que además de envíos de mensajes, en objetos contamos con la alternativa condicional o if. ¡Refresquemos cómo era su sintaxis! 
+
+if dia.es_soleado?
+  picnic.preparar!
+end
+*/
+
+class Golondrina
+  def initialize
+    @energia = 50
+  end
+  
+  def energia
+    @energia
+  end
+  
+  def volar_en_circulos!
+    if energia >=20
+      @energia-=20
+    end
+  end
+end

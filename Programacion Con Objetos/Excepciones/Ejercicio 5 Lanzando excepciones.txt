@@ -1,0 +1,36 @@
+/*
+
+¿Interesante, no? No solamente tuvimos un mensaje de error claro que nos permite entender qué sucedió, sino que además evitó que se deposite dinero en la cuenta de destino . ¿Cómo fue esto posible?
+
+La primera versión del método debitar! en CuentaOrigen se veía aproximadamente así:
+
+def debitar!(monto)
+  if monto <= @saldo
+    @saldo -= monto
+  end
+end
+Pero la segunda versión se ve así:
+
+def debitar!(monto)
+  if monto > @saldo
+    raise "No se puede debitar, porque el monto es mayor al saldo"
+  end
+
+  @saldo -= monto  
+end
+Mediante la sentencia raise mensaje lo que hicimos fue lanzar una excepción: provocar un error explícito que interrumpe el flujo del programa.
+
+¡Más despacio cerebrito!  Probá enviar mensaje_raro a ObjetoRaro (que ya cargamos por vos) en la consola...
+
+module ObjetoRaro
+   def self.mensaje_raro
+      raise "foo"
+      4
+   end 
+end
+...y pensá: ¿se retorna el 4? ¿Por qué?
+*/
+
+ObjetoRaro.mensaje_raro
+foo (RuntimeError)
+   

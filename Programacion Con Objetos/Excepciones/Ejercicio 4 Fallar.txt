@@ -1,0 +1,20 @@
+/*
+En el ejemplo que acabamos de ver, si la cuenta origen no tiene suficiente saldo, cuando hagamos transferencia.realizar!, de cuenta_origen no se habrá debitado nada, pero en la de destino se habrá acreditado dinero. ¡Acabamos de crear dinero! 
+
+Suena divertido, pero el banco estará furioso .
+
+El problema acá surge porque la cuenta origen falló, pero lo hizo en silencio y nadie se enteró. ¿La solución? ¡Gritar el error fuerte y claro!
+
+Probá nuevamente las consultas anteriores, pero con una nueva versión del código que no falla silenciosamente:
+
+ cuenta_origen.saldo
+ cuenta_destino.saldo
+ transferencia.realizar!(cuenta_origen, cuenta_destino)
+*/
+
+ cuenta_origen.saldo
+=> 20
+  cuenta_destino.saldo
+=> 100
+  transferencia.realizar!(cuenta_origen, cuenta_destino)
+No se puede debitar, porque el monto $40 es mayor al saldo $20 (RuntimeError)
