@@ -1,0 +1,14 @@
+/*
+Sí, definitivamente Celular y Notebook tienen comportamiento repetido. 
+
+¿Qué métodos son iguales en ambas clases?
+
+
+initialize >
+
+
+utilizar!
+
+
+cargar_a_tope! >
+*/

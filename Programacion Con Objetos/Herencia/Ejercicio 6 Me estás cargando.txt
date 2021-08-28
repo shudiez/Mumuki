@@ -1,0 +1,45 @@
+/*
+Una de las grandes molestias que nos traen los dispositivos electrónicos es cuando se quedan sin batería. 
+
+Sabemos que tanto los celulares como las notebooks están descargados si tienen 20 o menos de batería. 
+
+Definí el método descargado? en donde corresponda.
+*/
+
+class Dispositivo
+  def initialize
+    @bateria=100
+  end
+
+  def bateria
+    @bateria
+  end
+
+  def cargar_a_tope!
+    @bateria=100
+  end
+
+  def descargado?
+    @bateria <=20
+  end
+end
+
+  class Celular < Dispositivo
+
+    def utilizar!(tiempo)
+      @bateria-=tiempo/2
+    end
+  end
+
+
+  class Notebook < Dispositivo
+
+    def utilizar!(tiempo)
+      @bateria-=tiempo
+    end
+  end
+
+
+
+
+

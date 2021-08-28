@@ -1,0 +1,56 @@
+/*
+Sabiendo que contamos con las clases Celular y Notebook, ¿alguna vez instanciaremos un objeto de la clase Dispositivo?  ¡Probablemente no! ¿Por qué querríamos crear algo tan genérico si podemos crear algo más específico? 
+
+A este tipo de clases, como Dispositivo o Ave en el ejemplo del ejercicio anterior, se las llama clases abstractas porque, a diferencia de las clases concretas (como Celular o Notebook), nunca las instanciamos. En otras palabras, no creamos objetos con esa clase, solo nos sirven para proveer comportamiento a sus subclases.
+
+Sabiendo esto, marcá las opciones correctas.
+
+
+Dispositivo es una clase concreta.
+
+
+Dispositivo es una clase abstracta. <
+
+
+Celular es una clase concreta. <
+
+
+Celular es una clase abstracta.
+
+
+Notebook es una clase concreta. <
+
+
+Notebook es una clase abstracta.
+
+
+Celular hereda de Dispositivo. <
+
+
+Dispositivo hereda de Celular.
+
+
+Notebook hereda de Dispositivo. <
+
+
+Dispositivo hereda de Notebook.
+
+
+Las clases abstractas proveen comportamiento a sus subclases. <
+
+
+Las clases abstractas se utilizan para crear instancias.
+
+
+Las clases concretas proveen comportamiento a su superclase.
+
+
+Las clases concretas se utilizan para crear instancias.<
+*/
+
+
+/*
+En otros lenguajes del paradigma de objetos hay maneras de explicitar que una clase es abstracta. Sin embargo, en Ruby no tenemos manera de diferenciarlas a simple vista. Al no haber una diferencia sintáctica, es decir, cómo definimos estas clases, es responsabilidad de quien programa no instanciar aquellas clases que queremos que sean abstractas. 
+
+
+*/

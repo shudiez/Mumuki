@@ -1,0 +1,25 @@
+/*
+¡Ahora es el turno de la Notebook! 
+
+La clase Notebook entiende los mismos mensajes que Celular y se comporta parecido pero no exactamente igual. La diferencia está en que a la hora de utilizar! una notebook, su @bateria disminuye en la cantidad de minutos que la utilicemos.
+
+Definí la clase Notebook, que sepa entender los mensajes initialize, utilizar! y cargar_a_tope!.
+*/
+
+class Notebook
+  def initialize
+    @bateria=100
+  end
+  
+   def bateria
+    @bateria
+  end
+
+  def utilizar!(tiempo)
+   @bateria-=tiempo
+  end
+
+  def cargar_a_tope!
+    @bateria=100
+  end
+end

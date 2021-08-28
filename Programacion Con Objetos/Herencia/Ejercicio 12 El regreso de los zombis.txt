@@ -1,0 +1,48 @@
+/*
+¿Creíste que habíamos terminado con los zombis? ¡Nada más alejado de la realidad! 
+
+Cuando surgieron los SuperZombi, notamos que parte de su comportamiento era compartido con un Zombi común: ambos pueden gritar, decirnos su salud, y responder si están sin_vida? de la misma forma. Pero hasta allí llegan las similitudes: recibir_danio! y sabe_correr? son distintos, y además, un SuperZombi puede regenerarse!, a diferencia de un Zombi.
+
+¡Esto nos da una nueva posibilidad! Podemos hacer que SuperZombi herede de Zombi para:
+
+Evitar repetir la lógica de aquellos métodos que son iguales, ya que se pueden definir únicamente en la superclase Zombi;
+redefinir en SuperZombi aquellos métodos cuya definición sea distinta a la de Zombi;
+definir únicamente en SuperZombi el comportamiento que es exclusivo a esa clase.
+¿Te animás? ¡Marcá las respuestas correctas!
+
+
+Zombi debe definir el método gritar <
+
+
+Zombi debe definir el método salud <
+
+
+Zombi debe definir el método sin_vida? <
+
+
+Zombi debe definir el método recibir_danio! <
+
+
+Zombi debe definir el método sabe_correr? <
+
+
+Zombi debe definir el método regenerarse!
+
+
+SuperZombi debe definir el método gritar
+
+
+SuperZombi debe definir el método salud
+
+
+SuperZombi debe definir el método sin_vida?
+
+
+SuperZombi debe definir el método recibir_danio! <
+
+
+SuperZombi debe definir el método sabe_correr? <
+
+
+SuperZombi debe definir el método regenerarse! <
+*/
